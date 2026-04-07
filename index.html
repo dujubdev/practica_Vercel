@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagicWorld | Parque de Atracciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎢 MagicWorld Park</h1>
+        <p>Donde la adrenalina y la magia se encuentran</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Nuestras Atracciones Estrella</h2>
+            <p>Haz clic en cada una para sentir la emoción.</p>
+        </section>
+
+        <div class="grid-container">
+            <div class="card" onclick="trackClick('La Furia del Dragón')">
+                <h3>La Furia del Dragón</h3>
+                <p>Nuestra montaña rusa más veloz. Alcanza los 110 km/h.</p>
+                <span class="tag">Adrenalina</span>
+            </div>
+
+            <div class="card" onclick="trackClick('El Galeón Fantasma')">
+                <h3>El Galeón Fantasma</h3>
+                <p>Un viaje misterioso por aguas oscuras y barcos hundidos.</p>
+                <span class="tag">Aventura</span>
+            </div>
+
+            <div class="card" onclick="trackClick('Splash Mountain')">
+                <h3>Splash Mountain</h3>
+                <p>¡Prepárate para mojarte en la caída más alta del parque!</p>
+                <span class="tag">Agua</span>
+            </div>
+        </div>
+
+        <div id="status-message"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MagicWorld Park - Práctica de Vercel</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
